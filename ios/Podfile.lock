@@ -329,6 +329,9 @@ PODS:
   - React-jsinspector (0.71.7)
   - React-logger (0.71.7):
     - glog
+  - react-native-zego-express-engine (3.2.0):
+    - React
+    - ZegoExpressEngine (= 3.2.0)
   - React-perflogger (0.71.7)
   - React-RCTActionSheet (0.71.7):
     - React-Core/RCTActionSheetHeaders (= 0.71.7)
@@ -413,10 +416,25 @@ PODS:
     - React-jsi (= 0.71.7)
     - React-logger (= 0.71.7)
     - React-perflogger (= 0.71.7)
+  - RNNotifee (7.7.1):
+    - React-Core
+    - RNNotifee/NotifeeCore (= 7.7.1)
+  - RNNotifee/NotifeeCore (7.7.1):
+    - React-Core
+  - RNSound (0.11.2):
+    - React-Core
+    - RNSound/Core (= 0.11.2)
+  - RNSound/Core (0.11.2):
+    - React-Core
   - SocketRocket (0.6.0)
   - Yoga (1.14.0)
   - YogaKit (1.18.1):
     - Yoga (~> 1.14)
+  - zego-uikit-prebuilt-call-rn (3.0.2):
+    - React-Core
+  - ZegoExpressEngine (3.2.0):
+    - ZegoExpressEngine/Video (= 3.2.0)
+  - ZegoExpressEngine/Video (3.2.0)
 
 DEPENDENCIES:
   - boost (from `../node_modules/react-native/third-party-podspecs/boost.podspec`)
@@ -464,6 +482,7 @@ DEPENDENCIES:
   - React-jsiexecutor (from `../node_modules/react-native/ReactCommon/jsiexecutor`)
   - React-jsinspector (from `../node_modules/react-native/ReactCommon/jsinspector`)
   - React-logger (from `../node_modules/react-native/ReactCommon/logger`)
+  - react-native-zego-express-engine (from `../node_modules/zego-express-engine-reactnative`)
   - React-perflogger (from `../node_modules/react-native/ReactCommon/reactperflogger`)
   - React-RCTActionSheet (from `../node_modules/react-native/Libraries/ActionSheetIOS`)
   - React-RCTAnimation (from `../node_modules/react-native/Libraries/NativeAnimation`)
@@ -477,7 +496,10 @@ DEPENDENCIES:
   - React-RCTVibration (from `../node_modules/react-native/Libraries/Vibration`)
   - React-runtimeexecutor (from `../node_modules/react-native/ReactCommon/runtimeexecutor`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
+  - "RNNotifee (from `../node_modules/@notifee/react-native`)"
+  - RNSound (from `../node_modules/react-native-sound`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
+  - "zego-uikit-prebuilt-call-rn (from `../node_modules/@zegocloud/zego-uikit-prebuilt-call-rn`)"
 
 SPEC REPOS:
   trunk:
@@ -496,6 +518,7 @@ SPEC REPOS:
     - OpenSSL-Universal
     - SocketRocket
     - YogaKit
+    - ZegoExpressEngine
 
 EXTERNAL SOURCES:
   boost:
@@ -538,6 +561,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/jsinspector"
   React-logger:
     :path: "../node_modules/react-native/ReactCommon/logger"
+  react-native-zego-express-engine:
+    :path: "../node_modules/zego-express-engine-reactnative"
   React-perflogger:
     :path: "../node_modules/react-native/ReactCommon/reactperflogger"
   React-RCTActionSheet:
@@ -564,8 +589,14 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/runtimeexecutor"
   ReactCommon:
     :path: "../node_modules/react-native/ReactCommon"
+  RNNotifee:
+    :path: "../node_modules/@notifee/react-native"
+  RNSound:
+    :path: "../node_modules/react-native-sound"
   Yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
+  zego-uikit-prebuilt-call-rn:
+    :path: "../node_modules/@zegocloud/zego-uikit-prebuilt-call-rn"
 
 SPEC CHECKSUMS:
   boost: 57d2868c099736d80fcd648bf211b4431e51a558
@@ -601,6 +632,7 @@ SPEC CHECKSUMS:
   React-jsiexecutor: eaa5f71eb8f6861cf0e57f1a0f52aeb020d9e18e
   React-jsinspector: 9885f6f94d231b95a739ef7bb50536fb87ce7539
   React-logger: 3f8ebad1be1bf3299d1ab6d7f971802d7395c7ef
+  react-native-zego-express-engine: 47e48e9e647bc973827a04f0c09723a9f3421feb
   React-perflogger: 2d505bbe298e3b7bacdd9e542b15535be07220f6
   React-RCTActionSheet: 0e96e4560bd733c9b37efbf68f5b1a47615892fb
   React-RCTAnimation: fd138e26f120371c87e406745a27535e2c8a04ef
@@ -614,9 +646,13 @@ SPEC CHECKSUMS:
   React-RCTVibration: 08f132cad9896458776f37c112e71d60aef1c6ae
   React-runtimeexecutor: c5c89f8f543842dd864b63ded1b0bbb9c9445328
   ReactCommon: dbfbe2f7f3c5ce4ce44f43f2fd0d5950d1eb67c5
+  RNNotifee: 05692d7bb42b6c718a3906aeb8431c48ff2e8097
+  RNSound: 6c156f925295bdc83e8e422e7d8b38d33bc71852
   SocketRocket: fccef3f9c5cedea1353a9ef6ada904fde10d6608
   Yoga: d56980c8914db0b51692f55533409e844b66133c
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
+  zego-uikit-prebuilt-call-rn: 01ee6af69d70b16a795b7b7983f1595b61a1da9f
+  ZegoExpressEngine: 7ddbd7134c03c45bfdcddb61f4d76a1486518425
 
 PODFILE CHECKSUM: 8847b6a4305db395934c8720979c6ff27a9ff7f2
 

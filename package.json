@@ -10,8 +10,14 @@
     "test": "jest"
   },
   "dependencies": {
+    "@notifee/react-native": "^7.7.1",
+    "@zegocloud/zego-uikit-prebuilt-call-rn": "^3.0.2",
+    "@zegocloud/zego-uikit-rn": "^1.12.6",
     "react": "18.2.0",
-    "react-native": "0.71.7"
+    "react-delegate-component": "^1.0.0",
+    "react-native": "0.71.7",
+    "react-native-sound": "^0.11.2",
+    "zego-express-engine-reactnative": "^3.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
